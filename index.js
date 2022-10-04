@@ -9,7 +9,7 @@ exports.handler = async (event, context, callback) => {
   const filename = Key.split("/")[Key.split("/").length - 1];
   const ext = Key.split(".")[Key.split(".").length - 1];
   // sharp는 jpg는 처리 못 하고 jpeg만 처리 가능해서 바꿔주기
-  const requiredFormat = ext === "jpg" || "JPG" ? "jpeg" : ext; // sharp에서는 jpg 대신 jpeg 사용합니다.
+  const requiredFormat = ext === "jpg" || "JPG" ? "jpeg" : ext; 
   console.log("name", filename, "ext", ext);
 
   try {
